@@ -111,16 +111,16 @@
         <plugins>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>${maven-assembly-plugin.version}</version>
+                <version>2.3</version>
                 <configuration>
                     <appendAssemblyId>false</appendAssemblyId>
                     <descriptors>
-                        <descriptor>src/assembly/policy-assembly.xml</descriptor>
+                        <descriptor>src/main/assembly/plugin-assembly.xml</descriptor>
                     </descriptors>
                 </configuration>
                 <executions>
                     <execution>
-                        <id>make-policy-assembly</id>
+                        <id>make-plugin-assembly</id>
                         <phase>package</phase>
                         <goals>
                             <goal>single</goal>
